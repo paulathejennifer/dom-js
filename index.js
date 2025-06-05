@@ -109,8 +109,10 @@ function renderLists() {
 
     var fruits = filtered.filter(i=>i.type=='fruit');
     if(fruits.length){
-        var fH = document.createElement('h3'); fH.textContent = 'Fruits';
-        listsDiv.appendChild(fH);
+        var fruitsHeading = document.createElement('h3'); 
+        fruitsHeading.textContent = 'Fruits';
+        fruitsHeading.textContent = fruitsHeading.textContent.toUpperCase()
+        listsDiv.appendChild(fruitsHeading);
         var fList = document.createElement('ul');
         fList.style.display = "flex";
         fList.style.flexWrap = "wrap";
@@ -125,8 +127,9 @@ function renderLists() {
     }
     var vegs = filtered.filter(i=>i.type=='vegetable');
     if(vegs.length){
-        var vH = document.createElement('h3'); vH.textContent = 'Vegetables';
-        listsDiv.appendChild(vH);
+        var vegHeading = document.createElement('h3'); vegHeading.textContent = 'Vegetables';
+        vegHeading.textContent = vegHeading.textContent.toUpperCase()
+        listsDiv.appendChild(vegHeading);
         var vList = document.createElement('ul');
         vList.style.display = "flex";
         vList.style.flexWrap = "wrap";
