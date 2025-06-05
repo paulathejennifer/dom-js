@@ -44,7 +44,7 @@ var items = [
     {type:'vegetable', name:'Onions', inStock:true, img:'https://dorchefarm.com/wp-content/uploads/2013/06/red-onions-2.jpg', price: 1.80},
     {type:'vegetable', name:'Tomatoes', inStock:false, img:'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg', price: 2.10},
     {type:'vegetable', name:'Kales', inStock:true, img:'https://plantvillage-production-new.s3.amazonaws.com/image/2758/file/default-2c59a6a1bb9021f49d2ff94c41c96abf.jpg', price: 2.70},
-    {type:'vegetable', name:'Cabbage', inStock:true, img:'https://hips.hearstapps.com/hmg-prod/images/cabbage-royalty-free-image-511789974-1546449748.jpg?crop=0.665xw:1.00xh;0.139xw,0&resize=640:*', price: 2.20}
+    {type:'vegetable', name:'Cabbages', inStock:true, img:'https://hips.hearstapps.com/hmg-prod/images/cabbage-royalty-free-image-511789974-1546449748.jpg?crop=0.665xw:1.00xh;0.139xw,0&resize=640:*', price: 2.20}
 ];
 
 var cart = {};
@@ -214,7 +214,7 @@ function makeListItem(item){
         cart[item.name]++;
         updateCartCount();
         btn.textContent = "Added!";
-        setTimeout(()=>{btn.textContent = "Add to cart";}, 900);
+        setTimeout(()=>{btn.textContent = "Add to cart ";}, 900);
     };
     li.appendChild(btn);
     return li;
