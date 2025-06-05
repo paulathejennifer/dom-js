@@ -34,26 +34,11 @@ allH3.forEach(h3 => {
 });
 
 
-const findList = document.getElementById('fruitList');
-const listItem = document.createElement('li');
-const newNode = document.createTextNode('New Item');
-listItem.append(newNode);
-findList.appendChild(listItem);
-listItem.textContent = "Avocados";
 
-
-const findListTwo = document.getElementById('vegList');
-const vegListItem = document.createElement('li');
-const newVegNode = document.createTextNode('New Veggie');
-vegListItem.append(newVegNode);
-findListTwo.append(vegListItem);
-vegListItem.textContent = "Cauliflower";
 
 var items = [
     {type:'fruit', name:'Mangoes', inStock:true, img:'https://ichef.bbci.co.uk/images/ic/1920x1080/p06hk0h6.jpg', price: 2.50},
     {type:'fruit', name:'Bananas', inStock:true, img:'https://alphaveggies.com/wp-content/uploads/2023/06/banana-bunch-Copy-scaled.jpg', price: 1.20},
-    {type:'fruit', name:'Mangoes', inStock:true, img:'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg', price: 2.50},
-    {type:'fruit', name:'Bananas', inStock:false, img:'https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg', price: 1.20},
     {type:'fruit', name:'Water Melons', inStock:true, img:'https://cdn.shopify.com/s/files/1/0442/8929/4491/files/Waternalon_cut_slices_SQ_shutterstock_619179680.jpg?v=1739356465', price: 3.00},
     {type:'fruit', name:'Oranges', inStock:true, img:'https://www.allrecipes.com/thmb/y_uvjwXWAuD6T0RxaS19jFvZyFU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1205638014-2000-d0fbf9170f2d43eeb046f56eec65319c.jpg', price: 2.00},
     {type:'vegetable', name:'Onions', inStock:true, img:'https://dorchefarm.com/wp-content/uploads/2013/06/red-onions-2.jpg', price: 1.80},
