@@ -106,6 +106,7 @@ function renderLists() {
         var matchesSearch = item.name.toLowerCase().includes(searchTerm.toLowerCase());
         return matchesType && matchesSearch;
     });
+    
 
     var fruits = filtered.filter(i=>i.type=='fruit');
     if(fruits.length){
