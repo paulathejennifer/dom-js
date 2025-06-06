@@ -36,6 +36,7 @@ fruitsTitle.style.letterSpacing = '2px';
 fruitsTitle.style.color = '#15803d';
 
 
+const allH3 = document.querySelectorAll('h3')
 allH3.forEach(h3 => {
     h3.style.textTransform = "uppercase";
     h3.style.letterSpacing = '2px';
