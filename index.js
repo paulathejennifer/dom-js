@@ -14,10 +14,20 @@ elements.forEach(element => {
 
 
 const greensKioskTitle = document.getElementById('title');
-greensKioskTitle.style.color = '#15803d';
+const logoImg = document.createElement('img');
+logoImg.src = 'images/kalelogo-removebg-preview.png'
+logoImg.alt = '';
+logoImg.style.verticalAlign='middle';
+logoImg.style.width = '250px';
+logoImg.style.height = 'auto';
+logoImg.style.display = 'inline-block'
+greensKioskTitle.appendChild(logoImg)
+greensKioskTitle.style.color = '#006400';
+greensKioskTitle.style.textAlign = 'center'
 greensKioskTitle.style.letterSpacing = '4px';
+greensKioskTitle.style.lineHeight = '0.1'
 greensKioskTitle.style.fontWeight = 'bold';
-greensKioskTitle.style.fontSize = '2.6rem';
+greensKioskTitle.style.fontSize = '3.8rem';
 greensKioskTitle.style.textShadow = '1px 1px 12px #c4ffc8';
 
 const fruitsTitle = document.getElementById('fruitsTitle');
@@ -106,7 +116,7 @@ function renderLists() {
         var matchesSearch = item.name.toLowerCase().includes(searchTerm.toLowerCase());
         return matchesType && matchesSearch;
     });
-    
+
 
     var fruits = filtered.filter(i=>i.type=='fruit');
     if(fruits.length){
@@ -245,6 +255,7 @@ orderDiv.style.gap = "12px";
 var orderBtn = document.createElement('button');
 orderBtn.textContent = 'Order';
 orderBtn.id = 'orderBtn';
+// orderBtn.style.marginLeft = '50px'
 orderBtn.style.padding = "10px 28px";
 orderBtn.style.borderRadius = "8px";
 orderBtn.style.background = "#22c55e";
