@@ -693,9 +693,9 @@ updateCartCount();
 
 //media queries for the green kiosk
 function applyResponsivenessGreensKiosk(){
-const isMobile = window.innerWidth < 700
+const isMobile = window.innerWidth  < '700px'
 
-document.body.style.fontSize = isMobile ? '1.2rem': '1rem';
+document.body.style.fontSize = isMobile ? '1.2rem': '1.4rem';
 
 greensKioskTitle.style.fontSize = isMobile ? '2.1rem': '3.8rem';
 greensKioskTitle.style.padding = isMobile ? '8px 0': '0';
