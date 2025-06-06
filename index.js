@@ -44,8 +44,6 @@ allH3.forEach(h3 => {
 });
 
 
-
-
 var items = [
     {type:'fruit', name:'Mangoes', inStock:true, img:'https://ichef.bbci.co.uk/images/ic/1920x1080/p06hk0h6.jpg', price: 2.50},
     {type:'fruit', name:'Bananas', inStock:true, img:'https://alphaveggies.com/wp-content/uploads/2023/06/banana-bunch-Copy-scaled.jpg', price: 1.20},
